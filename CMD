@@ -1,0 +1,11 @@
+npm init -y
+npm install express mysql2 body-parser
+
+CREATE DATABASE gestion_pacientes;
+USE gestion_pacientes;
+CREATE TABLE pacientes (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(100),
+  edad INT,
+  frecuencia_cardiaca INT
+);
