@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Pacientes</title>
+</head>
+<body>
+  <h1>Bienvenido a la Gestión de Pacientes</h1>
+  <p>Esta es una página básica para administrar pacientes y sus signos vitales.</p>
+</body>
+<form action="/submit-data" method="POST">
+  <label for="name">Nombre del paciente:</label>
+  <input type="text" id="name" name="name">
+  
+  <label for="age">Edad:</label>
+  <input type="number" id="age" name="age">
+
+  <label for="heart-rate">Frecuencia Cardiaca (bpm):</label>
+  <input type="number" id="heart-rate" name="heart_rate">
+
+  <button type="submit">Guardar</button>
+</form>
+<button onclick="window.location.href='/pacientes'">Ver Pacientes Guardados</button>
+</html>
